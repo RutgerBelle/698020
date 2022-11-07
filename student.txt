@@ -1,5 +1,5 @@
 Name: Rutger Belle
 Number: 698020
 Class: HAINTVT1D
-My Github url: https://RutgerBelle.github.io
-My Github repository url: 
+URL student GitHub website: https://github.com/RutgerBelle 
+URL student GitHub repository: https://github.com/RutgerBelle/698020
