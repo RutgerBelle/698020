@@ -1,0 +1,860 @@
+/*Standaard*/
+@font-face
+{
+	font-family: "Notable";
+	src: url("./fonts/Notable-Regular") format("opentype");
+}
+/*general*/
+body
+{
+	margin: auto;
+	font-family: "Arial", monospace;
+	font-family: "Helvetica", monospace;
+	font-family: "sans-serif", monospace;
+	background-color : #121212 ;
+	color: #FFFFFF;
+}
+body > p
+{
+	font-family: "Arial", monospace;
+}
+th 
+{
+	color: #FF0;
+}	
+h3
+{
+	text-indent: 100px;
+	font-family: "Notable";
+}
+h3::first-letter
+{
+	font-size: 200%;
+	color: #FFC72B;
+}
+nav
+{
+	background-color: #EE0719;
+}
+header > h1
+{
+	border-style: solid;
+	border-color: #808080;
+	color: #FFFFFF;
+}
+.HeadersInHeader > h1
+{
+	text-transform: uppercase;
+}
+header > h2
+{
+	border-style: solid;
+	border-color: #808080;
+	color: #FFFFFF;
+}
+#h3IndexThreeExamples
+{
+	text-align: center;
+}
+th
+{
+	color: #000000;
+}
+ol, ul
+{
+	color: #D3D3D3;
+}
+.vidVAR > h2
+{
+	text-align: center;
+}
+
+
+tr:nth-child(even)
+{
+	background-color: #CFF;
+}
+tr:nth-child(odd)
+{
+	background-color: #FFF;
+}
+col:first-child
+{
+	background-color: #FF0;
+}
+
+
+p strong
+{
+	background-color: #F00;
+}
+article + h4
+{
+	color: #F00;
+}
+.figureIndex > figcaption
+{
+	color: #F00;
+}
+
+
+/*Classes*/
+.figureIndex
+{
+	border-style: solid;
+	border-width: 5px;
+	border-color: #808080;
+	background-color: #333;
+}
+.sectionPartProduct h3
+{
+	color: #A38560;
+}
+.CookieStatement
+{
+	background-color: #FA0;
+	z-index: 9999;
+	flex-grow: 1;
+	opacity: 0.5;
+}
+#sectionTablePricing td
+{
+	color: #000000;
+}
+.footerUnderPage
+{
+	border-style: double;
+	border-color: #808080;
+	flex-grow: 8;
+}
+.CookieStatement
+{
+	height: 100px;
+	width: 100px;
+}
+#articlesProduct
+{
+	border-style: solid;
+	border-width: 10px;
+	border-color: #808080;
+	padding: 10px;
+	grid-gap: 10px;
+}	
+#articlesProduct > article 
+{
+	background-color: #333;
+	border-style: solid;
+	border-color: #666;
+}
+
+
+
+
+/*ID's*/
+#articlesProduct
+{
+	display: grid;
+}
+#article1
+{
+	grid-area: Artikel1;
+}
+#article2
+{
+	grid-area: Artikel2;
+}
+#article3
+{
+	grid-area: Artikel3;
+}
+#article4
+{
+	grid-area: Artikel4;
+}
+#article5
+{
+	grid-area: Artikel5;
+}
+#article6
+{
+	grid-area: Artikel6;
+}
+
+/*default link*/
+a
+{
+	margin-top: auto;
+	margin-bottom: auto;
+	text-decoration: underline;
+	color: #ADD8E6;
+}
+/*after visiting link*/
+a:visited
+{
+	color: #708090;
+}
+/*selecting link*/
+a:hover
+{	
+	color: #13293D;
+}
+/**/
+a:active
+{
+	color: #E8F1F2;
+}
+.CookieStatement
+{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+
+/*pc*/
+@media screen and (min-width: 1280px)
+{
+	body
+	{
+		width: 1000px;
+	}
+	section > h2
+	{
+		font-size: 15px;
+		letter-spacing: 0.2em;		
+		line-height: 1.5rem;
+	}
+	p 
+	{
+		line-height: 20px;
+	}
+	.formText
+	{
+		word-spacing: 3px;
+	}
+	.footerUnderPage
+	{
+		border-width: 10px;
+	}
+	#articlesProduct > article 
+	{
+		padding: 10px;
+		border-width: 10px;
+	}
+	.CookieStatement
+	{
+		height: 100px;
+		width: 140px;
+	}
+	#asideIndex
+	{
+		position: fixed;
+		top: 10%;
+		right: 0px;
+		border-style: solid;
+		background-color: grey;
+		width: 20%;
+		height: auto;
+		
+	}
+	.IndexMainText
+	{
+		display: flex;
+		flex-direction: column;
+		width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/*Flex en grid*/
+	#gridbox-container-footer
+	{
+		justify-self: stretch;
+	}
+	#asideIndex
+	{
+		flex-grow: 0;
+		flex-shrink: 0;
+	}
+	#flexbox-container-index
+	{
+		display: flex;
+	}
+	#flexbox-container-pricing
+	{
+		display: flex;
+	}
+	#flexbox-item-formContact
+	{
+		width: 1400px;
+	}
+	.flexbox-container-contact
+	{
+		display: flex;
+	}
+	#flexbox-container-contact
+	{
+		display: flex;
+	}
+	
+	#articlesProduct
+	{
+		display: grid;
+		grid-template-areas:
+		'Artikel2   Artikel1   Artikel3'
+		'Artikel2   Artikel1   Artikel3'
+		'Artikel5   Artikel1   Artikel3'
+		'Artikel5   Artikel1   Artikel4'
+		'Artikel5   Artikel1   Artikel4'
+		'Artikel5   Artikel1   Artikel4'
+		'Artikel5   Artikel6   Artikel6';
+	}
+	#grid-product
+	{
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 10px;
+	}
+	/*Vids and Pics- and Figures*/
+	video
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		position: static;
+		height: 400px;
+		width: auto;
+	}
+	.alarmLogo
+	{
+		width: 100px;
+		height: 100px;
+	}
+	figure
+	{
+		float: right;
+	}
+	.figuresPricing, #figureWTTband6proPricing
+	{
+		border-style: solid;
+		border-width: 10px;
+		border-color: #808080;
+		padding: 10px;
+		background-color: #333;
+	}
+	.figureContact
+	{
+		border-style: solid;
+		border-width: 10px;
+		border-color: #808080;
+		padding: 10px;
+		background-color: #333;
+	}
+	.imagesContact
+	{
+		border-style: solid;
+		border-width: 5px;
+		border-color: #666;
+		position: relative;
+		height: 100px;
+		width: auto;
+	}
+	.FiguresProduct
+	{
+		border-style: solid;
+		border-width: 10px;
+		border-color: #808080;
+		padding: 20px;
+		background-color: #333;
+	}
+	#figureSleepTrackerExampleProduct, #figureWTTband6proProduct, #figureKimKardashionHerAppProduct
+	{
+		border-style: solid;
+		border-width: 5px;
+		border-color: #666;
+	}
+	#imgVarPicForIndex
+	{
+		height: 200px;
+		width: auto;
+	}
+	#imgNeurosciencePicForIndex
+	{
+		height: 200px;
+		width: auto;
+	}
+	#imgSleepTracking
+	{
+		height: 200px;
+		width: auto;
+	}
+	#imgWTTband6proPricing
+	{
+		height: 200px;
+		width: auto;
+	}
+	#imgTheArouRingPricing
+	{
+		height: 200px;
+		width: auto;
+	}
+	#imgCheapTrackerWatchv20Pricing
+	{
+		height: 200px;
+		width: auto;
+	}
+	#figureSleepTrackerExampleProduct
+	{
+		height: 200px;
+		width: 200px;
+	}
+	#figureWTTband6proProduct
+	{
+		height: 200px;
+		width: 200px;
+	}
+	#figureKimKardashionHerAppProduct
+	{
+		height: 200px;
+		width: 200px;
+	}
+	/*display*/
+	.TelephoneHamburgerMenu
+	{
+		display: none;
+	}
+}
+/*tablet*/
+@media screen and (min-width: 481px) and (max-width: 1279px)
+{
+	body
+	{
+		width: 70%;
+	}
+	ol
+	{
+		font-size: 15px;
+	}
+	#articlesProduct
+	{
+		border-style: solid;
+		border-width: 10px;
+		border-color: grey;
+		padding: 10px;
+		grid-gap: 10px;
+	}	
+	#articlesProduct > article 
+	{
+		background-color: #333;
+		border-style: solid;
+		border-width: 5px;
+		border-color: #666;
+	}
+	table
+	{
+		font-size: 0.9em;
+	}
+	
+	/*Flex en grid*/
+	#gridbox-container-footer
+	{
+		justify-self: stretch;
+	}
+	.IndexMainText
+	{
+		flex-direction: column-reverse;
+		display: flex;
+	}
+	#flexbox-container-contact
+	{
+		display: flex;
+	}
+	.figureContact
+	{
+		clear: both;
+		float: right;
+	}
+	.figureContact
+{
+		border-style: solid;
+		border-width: 10px;
+		border-color: #808080;
+		padding: 10px;
+		background-color: #333;
+	}
+	.imagesContact
+	{
+		border-style: solid;
+		border-width: 5px;
+		border-color: #666;
+		position: relative;
+		height: 100px;
+		width: auto;
+	}
+	.FiguresProduct
+	{
+		border-style: solid;
+		border-width: 10px;
+		border-color: #808080;
+		padding: 20px;
+		background-color: #333;
+	}
+	#figureSleepTrackerExampleProduct, #figureWTTband6proProduct, #figureKimKardashionHerAppProduct
+	{
+		border-style: solid;
+		border-width: 5px;
+		border-color: #666;
+	}
+	#asidePricing
+	{
+		display: flex;
+	}
+	#articlesProduct
+	{
+		display: grid;
+		grid-template-areas:
+		'Artikel1   Artikel2'
+		'Artikel1   Artikel2'
+		'Artikel3   Artikel2'
+		'Artikel3   Artikel5'
+		'Artikel3   Artikel5'
+		'Artikel3   Artikel5'
+		'Artikel6   Artikel6'
+		'Artikel6   Artikel6';
+	}
+	#grid-product
+	{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+	}
+	.FiguresProduct
+	{
+		border-width: 5px;
+		padding: 2px;
+	}
+	/*Vids and Pics- and Figures*/
+	video
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		position: static;
+		height: 250px;
+		width: auto;
+	}
+	.alarmLogo
+	{
+		width: 100px;
+		height: 100px;
+	}
+	.imagesContact
+	{
+		position: relative;
+		height: 100px;
+		width: 100px;
+	}
+	figure
+	{
+		float: left;
+	}
+	.figuresPricing, #figureWTTband6proPricing
+	{
+		border-style: solid;
+		border-width: 10px;
+		border-color: #808080;
+		padding: 10px;
+		background-color: #333;
+	}
+	#imgVarPicForIndex
+	{
+		height: 150px;
+		width: auto;
+	}
+	#imgNeurosciencePicForIndex
+	{
+		height: 200px;
+		width: auto;
+	}
+	#imgSleepTracking
+	{
+		height: 150px;
+		width: auto;
+	}
+	#imgWTTband6proPricing
+	{
+		height: 200px;
+		width: auto;
+	}
+	#imgTheArouRingPricing
+	{
+		height: 200px;
+		width: auto;
+	}
+	#imgCheapTrackerWatchv20Pricing
+	{
+		height: 200px;
+		width: auto;
+	}
+	#figureSleepTrackerExampleProduct
+	{
+		height: 200px;
+		width: 200px;
+	}
+	#figureWTTband6proProduct
+	{
+		height: 200px;
+		width: 200px;
+	}
+	#figureKimKardashionHerAppProduct
+	{
+		height: 200px;
+		width: 200px;
+	}
+	
+	/*display*/
+	.TelephoneHamburgerMenu
+	{
+		display: none;
+	}
+	#article4
+	{
+		display: none;
+	}
+	#figureProduct
+	{
+		display: none;
+	}
+	#figureWTTband6proPricing
+	{
+		display: none;
+	}
+}
+
+/*telefoon*/
+@media screen and (max-width: 480px)
+{
+	body
+	{
+		width: 80%
+	}
+	section > h1, h2
+	{
+		background-color: #ED0517;
+	}
+	#articlesProduct
+	{
+		border-style: solid;
+		border-width: 7px;
+		border-color: #808080;
+		padding: 7px;
+	}
+	#article1, #article2, #article3, #article4, #article5, #article6
+	{
+		border-style: solid;
+		border-width: 7px;
+		border-color: #666;
+		background-color: #333;
+	}
+	#asidePricing
+	{
+		display: block;
+		margin: auto;
+	}
+	#grid-product
+	{
+		text-align: center;
+	}
+	/*Flex en grid*/
+	#flexbox-container-contact
+	{
+		flex-direction: column;
+		display: flex;
+	}
+	#flexbox-container-pricing
+	{
+		flex-direction: column;
+		display: flex;
+	}
+	#gridbox-container-footer
+	{
+		justify-self: stretch;
+	}
+	#asidePricing
+	{
+		flex-direction: column;
+		display: flex;
+	}
+	.IndexMainText
+	{
+		flex-direction: column-reverse;
+		display: flex;
+	}
+	.headerIndex
+	{
+		display: flex;
+	}
+	header
+	{
+		display: flex;
+	}
+	#grid-product
+	{
+		display: grid;
+		grid-column: 1;
+		grid-gap: 10px;
+	}
+	#articlesProduct
+	{
+		display: grid;
+		grid-template-areas:
+		'Artikel5   Artikel5'
+		'Artikel5   Artikel5'
+		'Artikel5   Artikel5'
+		'Artikel3   Artikel3'
+		'Artikel3   Artikel3'
+		'Artikel3   Artikel3'
+		'Artikel2   Artikel2'
+		'Artikel2   Artikel2'
+		'Artikel2   Artikel2'
+		'Artikel1   Artikel1'
+		'Artikel1   Artikel1'
+		'Artikel1   Artikel1';
+	}
+	
+	/*Vids and Pics- and Figures*/
+	h1
+	{
+		font-size: 20px;
+	}
+	h2
+	{
+		font-size: 15px;
+	}
+	table
+	{
+		font-size: 0.6em;
+	}
+	.imagesContact
+	{
+		position: relative;
+		height: 100px;
+		width: 100px;
+	}
+	figure
+	{
+		float: left;
+	}
+	#imgVarPicForIndex
+	{
+		height: 100px;
+		width: auto;
+	}
+	#imgNeurosciencePicForIndex
+	{
+		height: 75px;
+		width: auto;
+	}
+	#imgSleepTracking
+	{
+		height: 50px;
+		width: auto;
+	}
+	#imgWTTband6proPricing
+	{
+		height: 100px;
+		width: auto;
+	}
+	#imgTheArouRingPricing
+	{
+		height: 100px;
+		width: auto;
+	}
+	#imgCheapTrackerWatchv20Pricing
+	{
+		height: 100px;
+		width: auto;
+	}
+	#figureSleepTrackerExampleProduct
+	{
+		height: 100px;
+		width: auto;
+	}
+	#figureWTTband6proProduct
+	{
+		height: 100px;
+		width: auto;
+	}
+	#figureKimKardashionHerAppProduct
+	{
+		height: 100px;
+	}
+	/*hamburger menu*/
+	
+	/*grootte van de foto*/
+	.Hamburger_icon
+	{
+		height: 10px;
+		width: 10px;
+	}
+	/*achtergrond van de foto en de grootte van de achtergrond*/
+	.HamburgerMenuPhoneButton
+	{
+		padding: 20px;
+		background-color: #ED0517;
+	}
+	/*doorverwijslinkjes achtergrond in het menu*/
+	.HamburgerMenuPhoneContents
+	{
+		display: none;
+		position: absolute;
+		background-color: #FFFFFF;
+	}
+	/*doorverwijslinkjes in het menu*/
+	.HamburgerMenuPhoneContents a
+	{
+		color: #000000;
+		padding: 8px;
+		text-decoration: none;
+		display: block;
+	}
+	/*achtegrond kleur als je met je muis er over heen gaat*/
+	.HamburgerMenuPhoneContents a:hover 
+	{
+		background-color: #ED0517;
+	}
+	/*de linkjes verschijnen als je er op hovert*/
+	.TelephoneHamburgerMenu:hover .HamburgerMenuPhoneContents 
+	{
+		display: block;
+	}
+	/*display*/
+	.alarmLogo
+	{
+		display: none;
+	}
+	.PcAndTabletNav
+	{
+		display: none;
+	}
+	.vidVAR
+	{
+		display: none;
+	}
+	#article4
+	{
+		display: none;
+	}
+	#article6
+	{
+		display: none;
+	}
+	#articlePricing
+	{
+		display: none;
+	}	
+	figcaption
+	{
+		display: none;
+	}
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>		
+		<meta charset = "utf-8">
+		<meta name = "author" content = "Rutger Belle">
+		<meta name = "description" content = "Contactpage where the costumer can fill their email, name and their question">
+		<meta name = "keywords" content = "Contact, contactpage, contactform, question, questionpage">
+		<title>Contact page of Rutger's Technologies</title>
+		<link rel = "stylesheet" type = "text/css" href = "css/style.css">
+		<link rel = "icon" href = "./img/alarmForLogo.jpg" sizes= "16x16" type = "image/jpg">
+	</head>
+	<body>
+		<header>
+			<a href = "index.html" target="_blank">
+				<img 
+					src = "./img/alarmForLogo.jpg"
+					title = "Logo"
+					alt = "Clock as logo"
+					class = "alarmLogo"
+				>
+			</a>
+			<section class = "HeadersInHeader">
+				<h1>
+					Contact page
+				</h1>
+				<h2>
+					Rutger's Technologies. We can help you, whenever you want
+				</h2>
+			</section>
+			<nav class = "TelephoneHamburgerMenu">
+			<a class = "HamburgerMenuPhoneButton">
+				<img
+					src = "./img/Hamburger_icon.png"
+					class = "Hamburger_icon"
+					title = "Humburger menu icon"
+					alt = "Hamburger menu icon to show the other pages"
+				>
+			</a>
+			<article class = "HamburgerMenuPhoneContents">
+				<h2>
+					Our following pages:
+				</h2>
+				<a href = "index.html">
+					index page
+				</a>
+				<a href = "product.html">
+					product page
+				</a>
+				<a href = "pricing.html">
+					pricing page
+				</a>
+			</article>
+		</nav>
+		</header>	
+		<nav class = "PcAndTabletNav">
+			<ul>
+				<li>
+					<a href = index.html class = "navigation" target="_blank">
+						index
+					</a>
+				</li>
+				<li>
+					<a href = product.html class = "navigation" target="_blank">
+						product
+					</a>
+				</li>
+				<li>
+					<a href = pricing.html class = "navigation" target="_blank">
+						pricing
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<section>
+			<h3>
+				Contact information
+			</h3>
+			<ol>
+				<li>
+					<strong>Company name:</strong> Rutger's Technologies.
+				</li>
+				<li>
+					<strong>Chamber of Commerce number:</strong> 01234567
+				</li>
+				<li>
+					<strong>Bank account number:</strong> IBAN 27 RABO 0123456789
+				</li>
+				<li>
+					<strong>address:</strong> .
+				</li>
+				<li>
+					<strong>Phone number:</strong> 0612345678
+				</li>
+				<li>
+					<strong>email:</strong> Rutgers@technologies.com
+				</li>
+			</ol>
+		</section>
+		<main id = "flexbox-container-contact">
+			<form
+				action = "vote.php"
+				method = "post"
+				id = "flexbox-item-formContact"
+			>
+				<fieldset>
+					<legend>
+						Questions
+					</legend>
+						<p class = "formText">
+							<label for = "name" >
+								What's your name?
+							</label>
+							<input name = "name" id = "name" required>
+						</p>
+						<p class = "formText">
+							<label for = "email">
+								What's your email?
+							</label>
+							<input type = "email" name = "email" value = "email" id = "email" required>
+						</p>
+						<p class = "formText">
+							<label for = "message">
+								Please fill in your message:
+							</label>
+							<input name = "message" id = "message" required>
+						</p>
+						<p class = "formText">
+							<input type = "submit" value = "submit" name = "submit">
+						</p>
+				</fieldset>
+			</form>
+			<aside id = "asideContact">
+				<figure class = "figureContact">
+					<a href = "https://www.inholland.nl/">
+						<img
+							src = "./img/WTTband6pro.png"
+							title = "Picture of the WTT band 6 pro"
+							alt = "This is a picture of the WTT band 6 pro, a watch made by company Watch The Time"
+							class = "imagesContact"
+						>
+					</a>
+				</figure>
+				<figure class = "figureContact">
+					<a href = "https://www.inholland.nl/">
+						<img
+							src = "./img/TheArouRing.webp"
+							title = "picture of the The Arou Ring"
+							alt = "This is a picture of The Arou Ring, a ring made by company Arou Ring"
+							class = "imagesContact"
+						>
+					</a>
+				</figure>
+				<figure class = "figureContact">
+					<a href = "https://www.inholland.nl/">
+						<img
+							src = "./img/CheapTrackerWatchv20.jpg"
+							title = "pciture of the Cheap Tracker Watch v 20"
+							alt = "This is a picture of the Cheap Tracker Watch v 20, a watch made by company Cheap Sleep Tracker Watches"
+							class = "imagesContact"
+						>
+					</a>
+				</figure>
+			</aside>
+		</main>
+		<section class = "CookieStatement" >
+			<h4 class = "CookieStatementText">	
+				Cookie statement
+			</h4>
+		</section>	
+		<footer class = "flexbox-container-footer">
+			<section class = "footerUnderPage">
+				<h4>
+					&copy; Rutger Belle
+				</h4>
+			</section>
+		</footer>
+	</body>
+</html>
