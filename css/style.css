@@ -14,6 +14,10 @@ body
 	background-color : #121212 ;
 	color: #FFFFFF;
 }
+section > h1, h2
+{
+	background-color: #ED0517;
+}
 body > p
 {
 	font-family: "Arial", monospace;
@@ -64,9 +68,10 @@ ol, ul
 {
 	color: #D3D3D3;
 }
-.vidVAR > h2
+#vidVAR > h2
 {
 	text-align: center;
+	background-color: #121212;
 }
 
 
@@ -638,10 +643,6 @@ a:active
 	{
 		width: 80%
 	}
-	section > h1, h2
-	{
-		background-color: #ED0517;
-	}
 	#articlesProduct
 	{
 		border-style: solid;
@@ -723,6 +724,15 @@ a:active
 	}
 	
 	/*Vids and Pics- and Figures*/
+	video
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		position: static;
+		height: 150px;
+		width: auto;
+	}
 	h1
 	{
 		font-size: 20px;
