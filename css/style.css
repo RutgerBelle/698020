@@ -278,7 +278,6 @@ a
 	background-color: #000000;
 }
 
-#TryingListGrid
 /*after visiting link*/
 a:visited
 {
@@ -289,7 +288,7 @@ a:hover
 {	
 	color: #ED0517;
 }
-/**/
+/*er op drukken*/
 a:active
 {
 	color: #FFC72B;
@@ -300,14 +299,12 @@ a:active
 	bottom: 0;
 	right: 0;
 }
-
 #articlePricing
 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 80%;
 }
-
 
 /*pc*/
 @media screen and (min-width: 1280px)
@@ -579,7 +576,7 @@ a:active
 	}
 	table
 	{
-		font-size: 0.6em;
+		font-size: 70%;
 	}
 	
 	/*Flex en grid*/
@@ -594,6 +591,7 @@ a:active
 	}
 	#flexbox-container-contact
 	{
+		justify-content: center;
 		display: flex;
 	}
 	.figureContact
