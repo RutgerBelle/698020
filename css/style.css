@@ -230,31 +230,31 @@ a
 	text-decoration: underline;
 	color: #ADD8E6;
 }
-.TryingList
+.NavBar
 {
 	display: flex;
 	margin: 0px;
 	padding: 10px;
 }
-.TryingList li
+.NavBar li
 {
 	list-style-type: none;
 	margin: 0px 10px;
 }
-.TryingList li a
+.NavBar li a
 {
 	padding: 10px;
 	background-color: #FFC72B;
 	text-decoration: none;
 }
-.TryingList li a:hover
+.NavBar li a:hover
 {
 	background-color: #000000;
 }
 
 
 
-#TryingListGrid
+#NavBarGrid
 {
 	display: grid;
 	grid-template-columns: auto auto auto;
@@ -262,18 +262,18 @@ a
 	margin: 0px;
 	padding: 10px;
 }
-#TryingListGrid li
+#NavBarGrid li
 {
 	list-style-type: none;
 	margin: 0px 10px;
 }
-#TryingListGrid li a
+#NavBarGrid li a
 {
 	padding: 10px;
 	background-color: #FFC72B;
 	text-decoration: none;
 }
-#TryingListGrid li a:hover
+#NavBarGrid li a:hover
 {
 	background-color: #000000;
 }
