@@ -16,6 +16,8 @@ body
 }
 section > h1, h2
 {
+	margin: 0px;
+	padding: 2px;
 	background-color: #ED0517;
 }
 body > p
@@ -58,6 +60,7 @@ header > h2
 }
 #h3IndexThreeExamples
 {
+	margin-bottom: -20px;
 	text-align: center;
 }
 th
@@ -70,6 +73,7 @@ ol, ul
 }
 #vidVAR > h2
 {
+	margin-top: 50px;
 	text-align: center;
 	background-color: #121212;
 }
@@ -99,7 +103,7 @@ article + h4
 }
 .figureIndex > figcaption
 {
-	color: #F00;
+	color: #FFC72B;
 }
 
 
@@ -126,12 +130,6 @@ article + h4
 {
 	color: #000000;
 }
-.footerUnderPage
-{
-	border-style: double;
-	border-color: #808080;
-	flex-grow: 8;
-}
 .CookieStatement
 {
 	height: 100px;
@@ -139,6 +137,7 @@ article + h4
 }
 #articlesProduct
 {
+	margin-top: 50px;
 	border-style: solid;
 	border-width: 10px;
 	border-color: #808080;
@@ -151,6 +150,44 @@ article + h4
 	border-style: solid;
 	border-color: #666;
 }
+.flexbox-container-footer
+{
+	border-style: double;
+	border-color: #808080;
+	flex-grow: 8;
+	border-width: 10px;
+}
+.gridbox-container-footer
+{
+	border-style: double;
+	border-color: #808080;
+	flex-grow: 8;
+	border-width: 10px;
+	grid-gap: 300px;
+}
+.flexbox-container-footer > h4
+{
+	text-align: center;
+}
+.gridbox-container-footer > h4
+{
+	text-align: center;
+}
+.MainSectionFooter
+{
+	display: flex;
+	font-family: "Notable";
+	justify-content: center;
+}
+#MainSectionFooterGrid
+{
+	display: grid;
+	font-family: "Notable";
+	justify-content: center;
+	grid-template-columns: auto auto auto auto auto;
+	grid-gap: 10px 10px;
+}
+
 
 
 
@@ -193,26 +230,82 @@ a
 	text-decoration: underline;
 	color: #ADD8E6;
 }
+.TryingList
+{
+	display: flex;
+	margin: 0px;
+	padding: 10px;
+}
+.TryingList li
+{
+	list-style-type: none;
+	margin: 0px 10px;
+}
+.TryingList li a
+{
+	padding: 10px;
+	background-color: #FFC72B;
+	text-decoration: none;
+}
+.TryingList li a:hover
+{
+	background-color: #000000;
+}
+
+
+
+#TryingListGrid
+{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	justify-content: start;
+	margin: 0px;
+	padding: 10px;
+}
+#TryingListGrid li
+{
+	list-style-type: none;
+	margin: 0px 10px;
+}
+#TryingListGrid li a
+{
+	padding: 10px;
+	background-color: #FFC72B;
+	text-decoration: none;
+}
+#TryingListGrid li a:hover
+{
+	background-color: #000000;
+}
+
+#TryingListGrid
 /*after visiting link*/
 a:visited
 {
-	color: #708090;
+	color: #FFFFFF;
 }
 /*selecting link*/
 a:hover
 {	
-	color: #13293D;
+	color: #ED0517;
 }
 /**/
 a:active
 {
-	color: #E8F1F2;
+	color: #FFC72B;
 }
 .CookieStatement
 {
 	position: fixed;
 	bottom: 0;
 	right: 0;
+}
+
+#articlePricing
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 }
 
 
@@ -236,10 +329,6 @@ a:active
 	.formText
 	{
 		word-spacing: 3px;
-	}
-	.footerUnderPage
-	{
-		border-width: 10px;
 	}
 	#articlesProduct > article 
 	{
@@ -280,6 +369,7 @@ a:active
 	{
 		flex-grow: 0;
 		flex-shrink: 0;
+		flex-basis:auto;
 	}
 	#flexbox-container-index
 	{
@@ -318,7 +408,23 @@ a:active
 	{
 		display: grid;
 		grid-template-columns: auto auto auto;
-		grid-gap: 10px;
+		justify-content: center;
+		grid-gap: 15px;
+	}
+	/*Footer*/
+	.MainSectionFooter > article
+	{
+		padding: 10px;
+		margin: 10px;
+	}
+	.MainSectionFooterGrid > article
+	{
+		padding: 10px;
+		margin: 10px;
+	}
+	.flexbox-container-footer h4
+	{
+		font-size: 20px;
 	}
 	/*Vids and Pics- and Figures*/
 	video
@@ -423,6 +529,21 @@ a:active
 		height: 200px;
 		width: 200px;
 	}
+	#Instagram_logo
+	{
+		width: 50px;
+		height: auto;
+	}
+	#Twitter_logo
+	{
+		width: 50px;
+		height: auto;
+	}
+	#Facebook_logo
+	{
+		width: 50px;
+		height: auto;
+	}
 	/*display*/
 	.TelephoneHamburgerMenu
 	{
@@ -442,6 +563,7 @@ a:active
 	}
 	#articlesProduct
 	{
+		width: 100%;
 		border-style: solid;
 		border-width: 10px;
 		border-color: grey;
@@ -457,7 +579,7 @@ a:active
 	}
 	table
 	{
-		font-size: 0.9em;
+		font-size: 0.6em;
 	}
 	
 	/*Flex en grid*/
@@ -513,6 +635,7 @@ a:active
 	#asidePricing
 	{
 		display: flex;
+		flex-shrink: 8;
 	}
 	#articlesProduct
 	{
@@ -531,12 +654,23 @@ a:active
 	{
 		display: grid;
 		grid-template-columns: auto auto;
-		grid-gap: 10px;
+		justify-content: center;
+		align-items: stretch;
 	}
 	.FiguresProduct
 	{
 		border-width: 5px;
 		padding: 2px;
+	}
+	/*Footer*/
+	.MainSectionFooter> article
+	{
+		padding: 5px;
+		margin: 5px;
+	}
+	.flexbox-container-footer h4
+	{
+		font-size: 20px;
 	}
 	/*Vids and Pics- and Figures*/
 	video
@@ -593,12 +727,12 @@ a:active
 	}
 	#imgTheArouRingPricing
 	{
-		height: 200px;
+		height: 100px;
 		width: auto;
 	}
 	#imgCheapTrackerWatchv20Pricing
 	{
-		height: 200px;
+		height: 100px;
 		width: auto;
 	}
 	#figureSleepTrackerExampleProduct
@@ -615,6 +749,21 @@ a:active
 	{
 		height: 200px;
 		width: 200px;
+	}
+	#Instagram_logo
+	{
+		width: 30px;
+		height: 30px;
+	}
+	#Twitter_logo
+	{
+		width: 30px;
+		height: 30px;
+	}
+	#Facebook_logo
+	{
+		width: 30px;
+		height: 30px;
 	}
 	
 	/*display*/
@@ -666,6 +815,16 @@ a:active
 	{
 		text-align: center;
 	}
+	.figureContact
+	{
+		text-align: center;
+		justify-content: center;
+		border-style: solid;
+		border-width: 10px;
+		border-color: #808080;
+		padding: 10px;
+		background-color: #333;
+	}
 	/*Flex en grid*/
 	#flexbox-container-contact
 	{
@@ -685,6 +844,15 @@ a:active
 	{
 		flex-direction: column;
 		display: flex;
+		flex-grow: 8;
+	}
+	.FiguresProduct
+	{
+		border-style: solid;
+		border-width: 10px;
+		border-color: #808080;
+		padding: 20px;
+		background-color: #333;
 	}
 	.IndexMainText
 	{
@@ -721,6 +889,10 @@ a:active
 		'Artikel1   Artikel1'
 		'Artikel1   Artikel1'
 		'Artikel1   Artikel1';
+	}
+	#flexbox-container-pricing
+	{
+		width: 100%;	
 	}
 	
 	/*Vids and Pics- and Figures*/
@@ -799,13 +971,36 @@ a:active
 	{
 		height: 100px;
 	}
+	#Instagram_logo
+	{
+		width: 20px;
+		height: 20px;
+	}
+	#Twitter_logo
+	{
+		width: 20px;
+		height: 20px;
+	}
+	#Facebook_logo
+	{
+		width: 20px;
+		height: 20px;
+	}
+	.figuresPricing, #figureWTTband6proPricing
+	{
+		border-style: solid;
+		border-width: 10px;
+		border-color: #808080;
+		padding: 10px 75px;
+		background-color: #333;
+	}
 	/*hamburger menu*/
 	
 	/*grootte van de foto*/
 	.Hamburger_icon
 	{
-		height: 10px;
-		width: 10px;
+		height: 20px;
+		width: 20px;
 	}
 	/*achtergrond van de foto en de grootte van de achtergrond*/
 	.HamburgerMenuPhoneButton
